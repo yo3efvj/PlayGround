@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"><title>HAPPY AFTERLIFE</title><link rel="stylesheet" href="styles.css"></head><body>
+<div id="app">
+<canvas id="game"></canvas>
+<div id="vignette"></div>
+<header id="hud">
+ <div class="brand"><span>HAPPY</span><b>AFTERLIFE</b></div>
+ <div class="meters"><div class="health"><i id="hpFill"></i><span id="hpText">100 / 100</span></div><div class="energy"><i id="enFill"></i><span id="enText">◆ 0</span></div></div>
+ <div class="floor" id="floorText">FLOOR 1 · TRIAL OFFICE</div>
+</header>
+<div id="weapon"><div id="weaponIcon">✦</div><div><small>NOW EQUIPPED</small><b id="weaponName">Stapler Cannon</b></div></div>
+<div id="bossbar"><div class="bossname"><span>SUPERVISOR</span><b id="bossName">THE HR REAPER</b></div><div class="bar"><i id="bossFill"></i></div></div>
+<div id="crosshair"></div>
+<div id="joystick"><div id="stick"></div></div>
+<div id="dashBtn" class="action"><small>DASH</small></div>
+<div id="attackBtn" class="action"><div></div><small>FIRE</small></div>
+<div id="pauseBtn">Ⅱ</div>
+<div id="toast"></div>
+<div id="start" class="overlay"><div class="poster"><div class="sun"></div><div class="staff">GOOD MORNING<br><b>DEAD EMPLOYEE!</b></div></div><div class="startcard"><small>DEPARTMENT OF</small><h1>ETERNAL<br>EMPLOYMENT</h1><p>Complete your probation. Survive the paperwork.</p><button id="startBtn">CLOCK IN</button></div></div>
+<div id="pause" class="overlay hidden"><div class="menucard"><small>SHIFT PAUSED</small><h2>Lunch break?</h2><button id="resumeBtn">RETURN TO DUTY</button><button id="restartBtn" class="minor">START OVER</button></div></div>
+<div id="gameover" class="overlay hidden"><div class="menucard"><small>EMPLOYMENT TERMINATED</small><h2 id="endTitle">YOU DIED</h2><p id="endText">Your shift has been reviewed.</p><button id="againBtn">TRY ANOTHER LIFE</button></div></div>
+<div id="levelup" class="overlay hidden"><div class="menucard wide"><small>PRODUCTIVITY REVIEW</small><h2>Choose a perk</h2><div id="cards"></div></div></div>
+</div><script src="game.js"></script></body></html>
